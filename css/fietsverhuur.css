@@ -1,0 +1,111 @@
+@media (min-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "foto tabel foto2";
+    min-width: 100%;
+    height: 70%;
+  }
+  .tabel {
+    padding: 10px;
+    grid-area: tabel;
+    place-self: center;
+  }
+  .foto > img {
+    grid-area: foto;
+    height: 400px;
+    width: 100%;
+  }
+  .foto, .foto2 {
+    place-self: center;
+  }
+  .foto2 > img {
+    grid-area: foto2;
+    height: 400px;
+    width: 100%;
+  }
+  .foto,
+  .foto2 {
+    padding: 10px;
+  }
+  .tabel > button {
+    width: 100%;
+  }
+  footer a {
+    color: white;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "foto tabel foto2";
+    min-width: 100%;
+    height: 70%;
+  }
+  .tabel {
+    grid-area: tabel;
+    place-self: center;
+  }
+  .foto > img {
+    grid-area: foto;
+    height: 400px;
+    width: 100%;
+  }
+  .foto2 > img {
+    grid-area: foto2;
+    height: 400px;
+    width: 100%;
+  }
+  .foto,
+  .foto2 {
+    padding: 10px;
+  }
+  .tabel > button {
+    width: 100%;
+  }
+  footer a {
+    color: white;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .tabel {
+    padding: 10px;
+    place-self: center;
+  }
+  .foto {
+    display: flex;
+    align-self: center;
+  }
+  .foto2 {
+    display: flex;
+    align-self: center;
+  }
+  .foto > img {
+    height: 300px;
+    width: 100%;
+  }
+  .foto2 > img {
+    height: 300px;
+    width: 100%;
+  }
+  .foto,
+  .foto2 {
+    padding: 10px;
+  }
+
+  .tabel > button {
+    width: 100%;
+  }
+  footer a {
+    color: white;
+  }
+  nav a {
+    color: black;
+  }
+}

@@ -1,0 +1,87 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "form1  form2"
+    "form3  form4";
+    height: 100%;
+}
+
+.buttonStyle {
+  border: 3px;
+  border-style: solid;
+  border-color: black;
+}
+
+#form1 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  grid-area: form1;
+  place-self: center;
+}
+
+#form1 > p,
+#form2 > p,
+#form3 > p,
+#form4 > p {
+  text-align: center;
+}
+
+#form2 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  grid-area: form2;
+  place-self: center;
+}
+
+#form3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  grid-area: form3;
+  place-self: center;
+}
+
+#form4 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  grid-area: form4;
+  place-self: center;
+}
+
+.fiets {
+  height: 100px;
+  width: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "form1"
+      "form2"
+      "form3"
+      "form4";
+  }
+
+  #form1 {
+    grid-area: form1;
+    place-self: center;
+  }
+
+  #form2 {
+    grid-area: form2;
+    place-self: center;
+  }
+
+  #form3 {
+    grid-area: form3;
+    place-self: center;
+  }
+
+  #form4 {
+    grid-area: form4;
+    place-self: center;
+  }
+}
